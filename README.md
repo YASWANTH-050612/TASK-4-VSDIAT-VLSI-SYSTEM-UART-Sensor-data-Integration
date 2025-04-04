@@ -25,6 +25,9 @@ In this phase, I accessed the **uart_tx_sense** project from the **VSDSquadron_F
 
 I developed a **block diagram** to depict how the **sensor module** is integrated with the **UART transmitter**. This diagram illustrates the flow of sensor data through the FPGA and shows how the data is processed and then transmitted via UART to an external device.
 
+![Screenshot (2499)](https://github.com/user-attachments/assets/61eccb82-bd7b-4d59-94f2-3f1c501d86a7)
+
+
 **Components Included in the Diagram:**
 - **Sensor Module**: The input source that provides the sensor data.
 - **FPGA Module**: The processing unit for the sensor data.
