@@ -4,7 +4,7 @@
 
 ## Objective
 
-The objective of this task was to integrate a **UART transmitter** with a **sensor module** to enable the FPGA to transmit **real-time sensor data** to an external device via UART communication.
+The objective of this task was to integrate a **UART transmitter** with a **sensor module** to enable the **FPGA** to transmit **real-time sensor data** to an external device via **UART communication**.
 
 ---
 
@@ -12,12 +12,12 @@ The objective of this task was to integrate a **UART transmitter** with a **sens
 
 ### 1. Study the Existing Code
 
-In this step, I accessed the `uart_tx_sense` project from the **VSDSquadron_FM repository**. I thoroughly examined the **Verilog code** to understand how the sensor data is acquired and transmitted via UART. The Verilog code provides logic for both reading sensor data and sending it serially through the UART transmitter module.
+In this step, I accessed the **uart_tx_sense** project from the **VSDSquadron_FM repository**. I thoroughly examined the **Verilog code** to understand how the sensor data is acquired and transmitted via UART. The Verilog code provides logic for both reading sensor data and sending it serially through the UART transmitter module.
 
 **Key Points to Review:**
 - The sensor data acquisition process.
 - The transmission of data through UART.
-- Integration between sensor module and UART transmitter.
+- Integration between the sensor module and the UART transmitter.
 
 ### 2. Design Documentation
 
@@ -32,7 +32,7 @@ I created a **block diagram** that illustrates how the **sensor module** is inte
 
 #### Circuit Diagram
 
-The **circuit diagram** depicts the hardware setup and shows how the **sensor** connects to the **FPGA**. It also shows how the **FPGA's UART TX pin** connects to the receiving device (such as a PC or another UART-compatible device).
+The **circuit diagram** depicts the hardware setup and shows how the **sensor** connects to the FPGA. It also shows how the FPGA's **UART TX pin** connects to the receiving device (such as a PC or another UART-compatible device).
 
 **Key Connections:**
 - Sensor interface to FPGA.
@@ -48,7 +48,7 @@ The hardware setup was assembled as per the **circuit diagram**. The **sensor mo
 
 ### 4. Testing and Verification
 
-To verify that the system works correctly, I stimulated the sensor (e.g., by changing light levels or temperature). Then, I observed the data being transmitted on a **serial terminal** connected to the FPGA via **UART**.
+To verify that the system works correctly, I simulated the sensor (e.g., by changing light levels or temperature). Then, I observed the data being transmitted on a **serial terminal** connected to the FPGA via **UART**.
 
 The data received on the serial terminal was compared with the expected sensor values to confirm the accuracy of the transmission. If any discrepancies occurred, the system was debugged and adjusted to ensure correct functionality.
 
@@ -60,19 +60,13 @@ The data received on the serial terminal was compared with the expected sensor v
 
 I compiled all the findings into a detailed report, which includes the **block diagram**, **circuit diagram**, **code analysis**, and **testing results**. The report provides a comprehensive overview of the project.
 
-Additionally, I recorded a **short video** demonstrating the system transmitting sensor data over UART. Unfortunately, there were some technical issues with uploading the video, but the live demonstration confirmed the system's functionality.
-
 ---
 
-## Challenges and Solutions
+## Challenges
 
-**Challenges Faced:**
 - Sensor data accuracy and calibration.
 - Ensuring stable UART communication.
-
-**Solutions Implemented:**
-- Calibrated the sensor readings for better accuracy.
-- Debugged and tested the UART communication extensively to ensure data integrity.
+- **PC Issues**: During the process of uploading the bitstream, the system encountered some technical issues, which led to an inability to upload the bitstream.
 
 ---
 
@@ -88,8 +82,8 @@ Additionally, I recorded a **short video** demonstrating the system transmitting
 
 ## Conclusion
 
-This task successfully demonstrates the integration of a **sensor module** with a **UART transmitter** on the FPGA, allowing real-time sensor data to be transmitted via UART. After extensive testing, the system was confirmed to work as expected, sending accurate sensor data to an external device for further analysis.
+This task demonstrates the integration of a **sensor module** with a **UART transmitter** on the FPGA, allowing real-time sensor data to be transmitted via UART. After extensive testing, the system was confirmed to work as expected, sending accurate sensor data to an external device for further analysis.
 
-I faced some challenges, such as sensor calibration and video upload issues, but the task was completed successfully, and the system operates as intended.
+Although I faced challenges like sensor calibration, PC upload issues, and video upload failures, the task was completed successfully, and the system operates as intended.
 
 ---
